@@ -1,0 +1,77 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/plain; charset=iso-8859-1"/>
+<title>ForgotPassword</title>
+<style>
+
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	background-color: grey;
+	color: white;
+}
+.img {
+	background-image: url("train-img.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+</style>
+</head>
+<body class="img">
+	<center><h1 style="color:purple; background-color:white">E-Ticket Booking</h1></center>
+	<center>
+	<h1 style="padding-top:50px; color: yellow">Forgot Password</h1>
+	<p style="padding-top:10px; color: White">Please fill the required details below.</p>
+	<form action="UpdateDB.jsp" method="post">
+	  <div class="container">
+		<table>
+	    <tr><b style="color:white;">Email</b></tr> <tr> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </tr> <tr><input type="email" placeholder="Enter Email" name="email" required></tr></br>
+		<tr><b style="color:white;">Phone</b></tr><tr> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </tr><tr><input type="tel" name="phone"  pattern="[0-9]{10}" placeholder="Enter phone number" name="number" required></tr></br>
+	    <tr><b style="color:white;">New Password</b></tr><tr> &nbsp &nbsp &nbsp &nbsp &nbsp </tr><tr><input type="password" placeholder="Enter Password" name="newpassword" required></tr></br>
+		<tr><b style="color:white;">Confirm Password</b></tr><tr> &nbsp &nbsp </tr> <tr><input type="password" placeholder="Enter Password" name="confirmpassword" required></tr>
+		</table>
+	        
+	    <button type="submit"><b>Update</b></button>
+	  </div>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,6 @@
+devops/Rail/controllerWithoutDb/RegisterTest.class
+devops/Rail/service/UserServiceTest.class
+devops/Rail/controllerWithoutDb/ChangePasswordTest.class
+devops/Rail/controllerWithoutDb/LoginTest.class
+devops/Rail/LoginFunctionalTest.class
+devops/Rail/IntegrationTest.class

@@ -1,0 +1,6 @@
+devops/Rail/controllerWithoutDb/UserLoginController.class
+devops/Rail/controllerWithoutDb/UserPasswordController.class
+devops/Rail/service/UserService.class
+devops/Rail/controllerWithoutDb/UserRegisterController.class
+devops/Rail/model/User.class
+devops/Rail/db/UserDb.class
